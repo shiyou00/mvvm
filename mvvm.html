@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MVVM</title>
+</head>
+<body>
+
+<div id="app">
+    <p>{{a}}</p>
+    <p>{{b.b}}</p>
+    <input type="text" v-model="a">
+</div>
+
+<script src="./mvvm.js"></script>
+<script>
+    new Mvvm({
+        el: '#app',
+        data: {
+            a: 1,
+            b: { b : 2 }
+        }
+    })
+</script>
+</body>
+</html>
